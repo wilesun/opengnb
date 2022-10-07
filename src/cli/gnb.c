@@ -285,7 +285,11 @@ int main (int argc,char *argv[]){
     SetConsoleCtrlHandler(CosonleHandler, TRUE);
     #endif
 
-    conf = gnb_argv(argc, argv);
+//    conf = gnb_argv(argc, argv);
+    conf = (gnb_conf_t *)malloc(sizeof(gnb_conf_t));
+    conf->local_uuid = 1010;
+    conf->sqlite_mode = 1;
+    strcpy(conf->map_file,"./gnb.map");
 
     if ( 0 == conf->public_index_service ) {
         gnb_core = gnb_core_create(conf);

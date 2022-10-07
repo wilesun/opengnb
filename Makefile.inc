@@ -50,6 +50,7 @@ GNB_OBJS =                                 \
        ./src/gnb_conf.o                    \
        ./src/gnb_conf_file.o               \
        ./src/gnb_config_lite.o             \
+       ./src/gnb_config_sqlite.o           \
        ./src/gnb_node.o                    \
        ./src/gnb_udp.o                     \
        ./src/gnb_payload16.o               \
@@ -65,7 +66,8 @@ GNB_OBJS =                                 \
        ./src/gnb_log.o                     \
        ./src/gnb_hash32.o                  \
        ./src/gnb_keys.o                    \
-       ./libs/hash/murmurhash.o
+       ./libs/hash/murmurhash.o            \
+       ./libs/sqlite/sqlite3.o
 
 
 GNB_PF_OBJS   =                                  \

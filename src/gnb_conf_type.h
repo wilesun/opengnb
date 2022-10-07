@@ -52,6 +52,7 @@ typedef struct _gnb_conf_t {
 
 	uint8_t public_index_service;
 	uint8_t lite_mode;
+	uint8_t sqlite_mode;
 
 	uint32_t local_uuid;
 
